@@ -14,7 +14,7 @@
         </li>
         <li>
             I/O .. E/S Input/Output Entrada/Saída (de dados) <br>
-            Declaração de <b>Variáveis</b> 
+            Declaração de <b>Variáveis[interio, decimal, texto, boolean]</b> 
         </li>
         <li>
             Funções (Parte do código que executamos no momento desejado)
@@ -37,7 +37,32 @@
         alert("Olá mundo alert");
         document.write("olá mundo JS via write");
         console.log("Olá mundo console");
-        document.getElementById("titulo").innerHTML = "Olá Mundo JS via getElementById";
+        //document.getElementById("titulo").innerHTML = "Olá Mundo JS via getElementById";
+
+        function changeTitle(){
+            document.getElementById("titulo").innerHTML = "Olá Mundo JS via getElementById";
+        };
+    </script>
+    <br>
+    <button onclick="alert('Eu falei pra não clicar aqui...')">!!Alerta Não Clique Aqui!!</button>
+    <br>
+    <button onclick="changeTitle()">Mudar Título</button>
+    <br>
+    <button onclick="inputName()">Digitar o Nome</button>
+    <br>
+    <script>
+        document.write("Operações JS<br>");
+        let n1 = 40;
+        document.write(n1 + 5);
+
+        function inputName(){
+            let nome = prompt("Digite o seu nome!");
+            alert("O nome digitado foi: " + nome);
+        }
+
+        //DESAFIO de JS
+        //
+
     </script>
 </body>
 </html>
